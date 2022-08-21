@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="http://fonts.cdnfonts.com/css/gilroy-bold?styles=20876,20877,20878,20879,20880" rel="stylesheet">
+    <title>Сайт Резюме</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navigation">
+            <a href="#Home" class="nav__link">Home</a>
+            <a href="#aboutMe" class="nav__link">О себе</a>
+            <a href="#skills" class="nav__link">Стэк</a>
+            <a href="#portfolio" class="nav__link">Портфолио</a>
+            <a href="#contacts" class="nav__link">Контакты</a>
+        </nav>   
+    </div>
+    <section id="Home">
+        <img src="https://avatars.mds.yandex.net/i?id=42ccaab1812da3dd77b4dc024c7c3733-5879172-images-thumbs&n=13" alt="" class="photo">
+        <p class="home__info">Фронтенд junior разработчик,<br/>18 лет, г. Электросталь</p> 
+        <h1 class="home__name">Иван<br/> Соловьёв</h1>  
+            <!-- <div class="language"><span class="active">RU</span> | <span>ENG</span></div>  -->
+    </section>
+    <section id="aboutMe">
+        <h1 class="title">О себе</h1>
+        <div class="aboutMe__subtitle">
+            <p>Привет, я Ваня, начинающий frontend разработчик.</p>
+            <p>Учусь по различным курсам из YouTube и книгам.<br/>(learn.javascript.ru, Грокаем Алгоритмы)</p>
+            <p>Буду рад поработать в дружном коллективе<br/> и активно развиваться как специалист</p>
+        </div>
+    </section>
+    <section id="skills">
+        <h1 class="title">Мой стек технологий</h1>
+        <p class="subtitle">Знаком с такими технологиями как:</p>
+        <div class="stack">
+            <div class="stack__elem">
+                <img src="https://www.desura.com/files/images/65/65f875b0aa3b0eb635d4f76bfebca0f6.png" class="stack__elem__img" />
+                <div class="stack__elem__subtitle">HTML</div>
+            </div>
+            <div class="stack__elem">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Devicon-css3-plain.svg/1200px-Devicon-css3-plain.svg.png" class="stack__elem__img" />
+                <div class="stack__elem__subtitle">CSS</div>
+            </div>
+            <div class="stack__elem">
+                <img src="https://avatars.mds.yandex.net/i?id=db0607fc2e5f4c53dce85879e2e5b56b-4901917-images-thumbs&n=13" class="stack__elem__img" />
+                <div class="stack__elem__subtitle">JS</div>
+            </div>
+            <div class="stack__elem">
+                <img src="https://miro.medium.com/max/1200/1*WA_9JsyqFkge2HwYKcdJQw.png" class="stack__elem__img" />
+                <div class="stack__elem__subtitle">React*</div>
+            </div>
+            <div class="stack__elem">
+                <img src="https://avatars.mds.yandex.net/i?id=a6164a3f8ce91c271f7020fe0bb68529-5386523-images-thumbs&n=13" class="stack__elem__img" />
+                <div class="stack__elem__subtitle">Redux Toolkit*</div>
+            </div>
+        </div>
+        <span class="remark">*В процессе изучения</span>
+    </section>
+    <section id="portfolio">
+        <h1 class="title">Портфолио</h1>
+        <div class="portfolio__elem">
+            <div class="portfolio__elem__card">
+                <img src="./img/hoodie.png" alt="" class="portfolio__elem__card_front">   
+                <div class="portfolio__elem__card_back">
+                    <div class="card_back__content">
+                        <h1> Информация о проекте</h1>
+                        <p>Небольшой интернет магазин Худи,<br/> который по совместительству является моим первым "серьёзным" проектом, <br> в котором я впервые самостоятельно начал практиковать React и Redux.</p>
+                        <p>Проект конечно сыроват,но рабочий.<br/> Исходный код можно посмотреть вот тут: <a href="#">GitHub</a></p>
+                        <div class="card_back__arrow">
+                            <span>Кликните сюда</span>
+                            <img src="https://cdn3.iconfinder.com/data/icons/arrow-outline-8/32/down_2-128.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="portfolio__elem__link">Hoodie</a>
+        </div>
+    </section>
+    <section id="contacts">
+        <h1 class="title">Контакты</h1>
+        <div class="subtitle">Хотите связаться со мной?<br/>Попробуйте один из вариантов снизу</div>
+        <div class="contactLinks">
+            <a href="https://vk.com/c0olcat" class="contactLink"><img src="https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_32-vk-256.png" alt=""></a>
+            <a href="https://t.me/CoBa2204" class="contactLink"><img src="https://cdn3.iconfinder.com/data/icons/social-media-chamfered-corner/154/telegram-256.png" alt=""></a>
+            <a href="mailto: ivan.kot1331@gmail.com" class="contactLink"><img src="https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_gmail-256.png" alt=""></a>
+        </div>
+        <div class="phoneNumber">+7 977 787 68 44</div>
+    </section>
+</body>
+</html>
