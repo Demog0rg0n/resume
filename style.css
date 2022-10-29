@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+.container{
+    width: 950px;
+}
+
+.navigation{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 33px;
+    position: relative;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #828282;
+}
+
+.nav__link{
+    text-decoration: none;
+    color: #828282;
+    font-size: 18px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid white;
+}
+
+.nav__link:hover{
+    color: black;
+    border-bottom: 2px solid black;
+    transform: translate(0, 2px);
+}
+
+#Home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 940px;
+    padding-bottom: 15px
+}
+
+.home__name{
+    font-size: 46px;
+    line-height: 58px;
+    text-align: right;
+}
+
+.home__info{
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+.photo{
+    width: 150px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.language{
+    transform: rotate(-90deg);
+    color: #828282;
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.active{
+    color: black;
+}
+
+#aboutMe{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #F6F6F6;
+}
+
+.title{
+    text-align: center;
+    font-size: 34px;
+    margin-top: 105px;
+    margin-bottom: 18px;
+}
+
+.aboutMe__subtitle{
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Gilroy-Medium', sans-serif;
+    margin-bottom: 107px;
+}
+
+.subtitle{
+    text-align: center;
+    font-family: 'Gilroy-Medium', sans-serif;
+    margin-bottom: 60px;
+}
+
+#skills{
+    position: relative;
+}
+
+.stack{
+    display: flex;
+    justify-content: space-between;
+    width: 750px;
+    margin-bottom: 115px;
+}
+
+.stack__elem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stack__elem__subtitle{
+    margin-top: 15px;
+}
+
+.stack__elem__img{
+    height: 100px;
+}
+
+.remark{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+#portfolio{
+    background-color: #F6F6F6;
+    width: 100%;
+}
+
+.portfolio__elem{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.portfolio__elem__card{
+    position: relative;
+    width: 940px;
+    height: 510px;
+    margin-top: 20px;
+}
+
+.portfolio__elem__card_front,
+.portfolio__elem__card_back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 940px;
+    height: 510px;
+    transition: transform .5s linear;
+    border: 1px solid black;
+}
+
+.portfolio__elem__card_front{
+    transform: perspective(1700px) rotate(0deg);
+}
+
+.portfolio__elem__card_back{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: perspective(1700px) rotateY(180deg);
+    background-color: rgb(255, 255, 255);
+}
+
+.portfolio__elem__card_back p{
+    text-align: center;
+    line-height: 40px;
+}
+
+.portfolio__elem__card_back h1{
+    text-align: center;
+    font-size: 28px;
+}
+
+.portfolio__elem__card:hover > .portfolio__elem__card_front{
+    transform: perspective(1700px) rotateY(-180deg);
+}
+
+.portfolio__elem__card:hover > .portfolio__elem__card_back{
+    transform: perspective(1700px) rotateY(0deg);
+}
+
+.card_back__arrow img{
+    height: 40px;
+    width: fit-content;
+}
+
+.card_back__arrow{
+    position: absolute;
+    font-family: 'Gilroy-Medium', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0px;
+    left: 410px;
+}
+
+.portfolio__elem__link{
+    text-decoration: none;
+    margin-top: 15px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+.contactLinks{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactLink img{
+    height: 60px;
+}
+
+.contactLink:hover{
+    transform: translateY(5px);
+}
+
+.phoneNumber{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
