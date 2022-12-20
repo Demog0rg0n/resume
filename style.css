@@ -125,7 +125,7 @@ p{
 .stack{
     display: flex;
     justify-content: space-between;
-    width: 750px;
+    width: 800px;
     margin-bottom: 115px;
 }
 
@@ -197,10 +197,10 @@ p{
     line-height: 40px;
 }
 
-.portfolio__elem__card_back h1{
+.portfolio__elem__card_back h2{
     text-align: center;
     font-size: 28px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .portfolio__elem__card:hover > .portfolio__elem__card_front{
@@ -253,3 +253,4 @@ p{
     font-size: 20px;
     margin-bottom: 20px;
 }
+
