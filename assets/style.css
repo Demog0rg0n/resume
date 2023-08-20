@@ -122,6 +122,7 @@ a{
         bottom: -210px;
         padding-top: 30px;
         transition: .2s linear;
+        display: none;
     }
     .navigation__list{
         margin-top: 10px;
@@ -132,7 +133,7 @@ a{
     .nav__link{
         border-bottom: none;
     }
-    .header::after{
+    /* .header::after{
         content: "";
         display: block;
         top: 13px;
@@ -144,7 +145,7 @@ a{
     }
     .slidedUp{
         bottom: 0!important;
-    }
+    } */
 }
 
 
@@ -207,6 +208,9 @@ a{
     }
     section{
         padding: 60px 0;
+    }
+    .contacts{
+        padding-bottom: 20px;
     }
 }
 
