@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link href="http://fonts.cdnfonts.com/css/gilroy-bold?styles=20876,20877,20878,20879,20880" rel="stylesheet">
+    <title>Сайт Резюме</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li><a href="#home" class="nav__link">Home</a></li>
+                    <li><a href="#about" class="nav__link">О себе</a></li>
+                    <li><a href="#skills" class="nav__link">Стэк</a></li>
+                    <li><a href="#portfolio" class="nav__link">Портфолио</a></li>
+                    <li><a href="#contacts" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>   
+        </div>
+    </header>
+    <section class="ms" id="home">
+        <div class="ms__container container">
+            <div class="photo-wrapper">
+                <img src="/assets/img/photo.png" alt="" class="photo">
+            </div>
+            <p class="ms__info">Фронтенд разработчик, 19 лет, г. Электросталь</p> 
+            <h1 class="ms__name">Иван Соловьёв</h1>
+        </div>
+    </section>
+    <section class="about-me" id="about">
+        <div class="about-me__container container">
+            <h2 class="title">О себе</h2>
+            <div class="about-me__subtitle">
+                <p>Привет, я Ваня, начинающий frontend разработчик.</p>
+                <p>Учусь по различным курсам из YouTube и книгам.<br/>(learn.javascript.ru, Грокаем Алгоритмы)</p>
+                <p>Буду рад поработать в дружном коллективе<br/> и активно развиваться как специалист</p>
+                <p>Закончил колледж ГАПОУ МО "ПК "ЭНЕРГИЯ"<br/>специальность "Информационные системы и программирование" с красным дипломом</p>
+            </div>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <div class="skills__container container">
+            <h2 class="title">Мой стек технологий</h2>
+            <p class="subtitle">Знаком с такими технологиями как:</p>
+            <ul class="stack">
+                <li class="stack__elem">
+                    <img src="/assets/img/html.png" class="stack__elem__img" />
+                    <div class="stack__elem__title">HTML</div>
+                    <!-- <div class="popup-wrapper">
+                        <div class="stack__elem__popup">
+                            <div class="popup__title">
+                                <img src="/assets/img/html-icon.png" alt="" class="title-icon">
+                                <span>index.html</span>
+                                <img src="/assets/img/close.svg" alt="" class="close-popup">
+                            </div>
+                            <ul class="html">
+                                <li class="tab">Семантическая верстка</li>
+                                <li class="tab">Адаптивная верстка</li>
+                                <li class="tab">Кроссбраузерная верстка</li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </li>
+                <li class="stack__elem">
+                    <img src="/assets/img/css.png" class="stack__elem__img" />
+                    <div class="stack__elem__title">CSS</div>
+                    <!-- <div class="popup-wrapper">
+                        <div class="stack__elem__popup">
+                            <div class="popup__title">
+                                <img src="/assets/img/html-icon.png" alt="" class="title-icon">
+                                <span>CSS</span>
+                                <img src="/assets/img/close.svg" alt="" class="close-popup">
+                            </div>
+                            <ul class="css">
+                                <li class="tab">Анимация</li>
+                                <li class="tab">Адаптивная верстка</li>
+                                <li class="tab">Кроссбраузерная верстка</li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </li>
+                <li class="stack__elem">
+                    <img src="/assets/img/js.png" class="stack__elem__img" />
+                    <div class="stack__elem__title">JS</div>
+                    <!-- <div class="popup-wrapper">
+                        <div class="stack__elem__popup">
+                            <div class="popup__title">
+                                <img src="/assets/img/html-icon.png" alt="" class="title-icon">
+                                <span>script.js</span>
+                                <img src="/assets/img/close.svg" alt="" class="close-popup">
+                            </div>
+                            <ul class="js">
+                                <li class="function"><span>function&nbsp;</span> example(){</li>
+                                <li class="tab">Типизация</li>
+                                <li class="tab">Работа с DOM элементами</li>
+                                <li class="tab">Event loop</li>
+                                <li class="tab">Промисы</li>
+                                <li>}</li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </li>
+                <li class="stack__elem">
+                    <img src="/assets/img/react.png" class="stack__elem__img" />
+                    <div class="stack__elem__title">React</div>
+                    <!-- <div class="popup-wrapper">
+                        <div class="stack__elem__popup">
+                            <div class="popup__title">
+                                <img src="/assets/img/html-icon.png" alt="" class="title-icon">
+                                <span>script.js</span>
+                                <img src="/assets/img/close.svg" alt="" class="close-popup">
+                            </div>
+                            <ul class="React">
+                                <li class="function"><span>function&nbsp;</span> Component (){</li>
+                                <li class="tab return">return (</li>
+                                <li class="tab2">Функциональные компоненты</li>
+                                <li class="tab2">Хуки</li>
+                                <li class="tab2">Event loop</li>
+                                <li class="tab2">Промисы</li>
+                                <li class="tab return">)</li>
+                                <li class="function">}</li>
+                                <li class="function"></li>
+                                <li class="export">Export default&nbsp;<span>Component</span></li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </li>
+                <li class="stack__elem">
+                    <img src="/assets/img/redux.png" class="stack__elem__img" />
+                    <div class="stack__elem__title">Redux Toolkit</div>
+                </li>
+                <li class="stack__elem">
+                    <img src="/assets/img/ts.png" class="stack__elem__img" />
+                    <div class="stack__elem__title">TypeScript</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio__container container">
+            <h2 class="title">Портфолио</h2>
+            <div class="portfolio__items">
+                <div class="portfolio__elem">
+                    <img src="/assets/img//filmTube.png" alt="" class="portfolio__elem__preview">
+                    <div class="popup-wrapper">
+                        <div class="portfolio__elem__content">
+                            <h2>Информация о проекте</h2>
+                            <p>Аналог сайта Кинопоиск, в котором искользуется rest API от самого кинопоиска<br/> 
+                                На данный момент функционал не слишком большой, но позже планируется просмотр трейлеров,
+                                а когда я сделаю свой бэкенд появятся комментарии и список просмотренного/запланированного
+                            </p>
+                            <div class="portfolio__elem__links">
+                                <a href="https://github.com/Demog0rg0n/FilmTube" target="_ blank">GitHub</a>
+                                <a href="https://github.com/Demog0rg0n/FilmTube" target="_ blank">Сайт</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts" id="contacts">
+        <div class="contacts__container container">
+            <h2 class="title">Контакты</h2>
+            <div class="subtitle">Хотите связаться со мной?<br/>Попробуйте один из вариантов снизу</div>
+            <ul class="contactLinks">
+                <li>
+                    <a href="https://vk.com/c0olcat" class="contactLink">
+                        <img src="/assets/img/vk.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/CoBa2204" class="contactLink">
+                        <img src="/assets/img/telegram.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto: ivan.kot1331@gmail.com" class="contactLink">
+                        <img src="/assets/img/gmail.png" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="phoneNumber">+7 977 787 68 44</div>
+        </div>
+    </section>
+
+
+
+    <script src="/assets/js/scroll.js"></script>
+    <script src="/assets/js/skills.js"></script>
+    <script src="/assets/js/aboutMe.js"></script>
+    <script src="/assets/js/portfolio.js"></script>
+</body>
+</html>
