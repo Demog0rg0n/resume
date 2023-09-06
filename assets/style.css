@@ -133,19 +133,6 @@ a{
     .nav__link{
         border-bottom: none;
     }
-    /* .header::after{
-        content: "";
-        display: block;
-        top: 13px;
-        width: 100%;
-        background-color: #fff;
-        max-width: 200px;
-        height: 4px!important;
-        border-radius: 10px;
-    }
-    .slidedUp{
-        bottom: 0!important;
-    } */
 }
 
 
@@ -283,7 +270,6 @@ a{
     align-items: center;
     opacity: 0;
     transition: 1s linear;
-    cursor: pointer;
     background-color: #2d2d2d;
     height: 170px;
     padding-bottom: 0;
