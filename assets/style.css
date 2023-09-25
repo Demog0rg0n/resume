@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
     font-family: "Consolas";
     src: url(/assets/fonts/consolas.ttf);
-}
+} */
 
 
 
@@ -142,6 +142,7 @@ a{
 .ms{
     width: 100%;
     position: relative;
+    padding-top: 130px;
 }
 .ms__container{
     display: flex;
@@ -191,7 +192,7 @@ a{
         margin-top: 15px;
     }
     .ms{
-        padding-top: 60px;
+        padding-top: 100px;
     }
     section{
         padding: 60px 0;
@@ -200,7 +201,11 @@ a{
         padding-bottom: 20px;
     }
 }
-
+@media (max-width: 500px) {
+    .ms{
+        padding-top: 60px;
+    }
+}
 
 
 
@@ -321,7 +326,7 @@ a{
     opacity: 0;
     transform: scale(0.5);
 }
-.stack__elem__popup{
+/* .stack__elem__popup{
     padding: 20px;
     font-family: "Consolas";
     font-weight: 500;
@@ -329,7 +334,7 @@ a{
     width: 100%;
     max-width: 600px;
     position: relative;
-}
+} */
 
 .popup__title{
     position: absolute;
