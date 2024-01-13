@@ -58,6 +58,19 @@ a{
     color: #000;
 }
 
+.button{
+    text-align: center;
+    font-size: 16px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 20px;
+    background-color: #fb46e6;
+    background: linear-gradient(270deg,#fb46e6, #e93ab7);
+    color: #fff;
+    position: relative;
+}
+
 .container{
     width: 100%;
     max-width: 950px;
@@ -275,19 +288,16 @@ a{
     align-items: center;
     opacity: 0;
     transition: 1s linear;
-    background-color: #2d2d2d;
     height: 170px;
     padding-bottom: 0;
 }
-
 .visible{
     opacity: 1;
 }
-
 .stack__elem__title{
-    background-color: #464646;
     width: 100%;
     padding: 5px;
+    text-align: center;
 }
 .visible .stack__elem__img{
     transform: scale(1);
@@ -326,15 +336,6 @@ a{
     opacity: 0;
     transform: scale(0.5);
 }
-/* .stack__elem__popup{
-    padding: 20px;
-    font-family: "Consolas";
-    font-weight: 500;
-    background-color: #2d2d2d;
-    width: 100%;
-    max-width: 600px;
-    position: relative;
-} */
 
 .popup__title{
     position: absolute;
@@ -382,7 +383,7 @@ a{
 }
 
 
-.html{
+/* .html{
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -420,18 +421,18 @@ a{
     display: flex;
     flex-direction: column;
     gap: 7px;
-}
+} */
 
-.js li:last-child,
+/* .js li:last-child,
 .function{
     color: #fcef59;
     margin-left: 0;
 }
 .function span{
     color: #5685fb;
-}
+} */
 
-.js{
+/* .js{
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -445,7 +446,7 @@ a{
 
 .export span{
     color: #fcef59;
-}
+} */
 
 @media (max-width: 960px) {
     .stack__elem{
@@ -491,6 +492,7 @@ a{
     display: flex;
     flex-direction: column;
     gap: 80px;
+    counter-reset: num;
 }
 
 .portfolio__elem{
@@ -503,6 +505,70 @@ a{
     width: 100%;
     background-color: #1b1a1a;
     transition: .1s linear;
+}
+.portfolio__elem__bg{
+    position: absolute;
+    height: 100%;
+    width: 0;
+    z-index: 5;
+    transition: .2s linear;
+    background-color: #000;
+    opacity: 0.3;
+    left: 0;
+    top: 0;
+}
+.portfolio__elem:hover .portfolio__elem__bg{
+    width: 100%;
+}
+.portfolio__elem::after{
+    content: counter(num);
+    counter-increment: num;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    z-index: 100;
+    color: #fb46e6;
+    font-size: 100px;
+    opacity: 0;
+}
+.portfolio__elem.active::after{
+    animation-name: numAnimation;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;      /* Chrome 16+, Safari 4+ */
+    -moz-animation-fill-mode: forwards;    /* FF 5+ */
+    -o-animation-fill-mode: forwards;      /* Not implemented yet */
+    -ms-animation-fill-mode: forwards;     /* IE 10+ */
+    animation-fill-mode: forwards;  
+    z-index: 10;
+    opacity: 0.5;
+}
+.portfolio__elem__buttons{
+    position: absolute;
+    left: 40px;
+    bottom: 30px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    opacity: 0;
+    transform: scale(0.7);
+    transition: .1s linear;
+    z-index: 10;
+}
+.portfolio__elem.active .portfolio__elem__buttons{
+    animation-name: buttonsAnimation;
+    animation-duration: .2s;
+    animation-duration: linear;
+    animation-delay: .2s;
+    -webkit-animation-fill-mode: forwards;      /* Chrome 16+, Safari 4+ */
+    -moz-animation-fill-mode: forwards;    /* FF 5+ */
+    -o-animation-fill-mode: forwards;      /* Not implemented yet */
+    -ms-animation-fill-mode: forwards;     /* IE 10+ */
+    animation-fill-mode: forwards;
+}
+.portfolio__elem__buttons svg{
+    width: 35px;
 }
 .portfolio__elem__content{
     font-size: 20px;
@@ -519,16 +585,24 @@ a{
     margin-bottom: 30px;
 }
 .portfolio__elem__preview{
+    position: relative;
+}
+.portfolio__elem__img{
     width: 100%;
     object-fit: cover;
-    z-index: 50;
+    z-index: 10;
     transition: .1s linear;
 }
-.portfolio__elem__preview:hover{
-    -webkit-box-shadow: 10px 10px 0px 0px rgba(251, 70, 230, 1);
-    -moz-box-shadow: 10px 10px 0px 0px rgba(251, 70, 230, 1);
-    box-shadow: 10px 10px 0px 0px rgba(251, 70, 230, 1);
-    transform: translate(-10px, -10px);
+.portfolio__elem__title{
+    position: absolute;
+    left: 40px;
+    bottom: 30px;
+    font-size: 40px;
+    transition: .2s linear;
+    z-index: 10;
+}
+.portfolio__elem:hover .portfolio__elem__title{
+    bottom: 80px;
 }
 .portfolio__elem__links{
     display: flex;
@@ -539,6 +613,26 @@ a{
     left: 30px;
     bottom: 30px;
     color: #fff;
+}
+
+@keyframes numAnimation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        top: 10px;
+    }
+}
+
+@keyframes buttonsAnimation {
+    0%{
+
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 
@@ -564,4 +658,5 @@ a{
     margin-top: 30px;
     font-size: 20px;
     margin-bottom: 20px;
+
 }
