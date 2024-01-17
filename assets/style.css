@@ -19,10 +19,7 @@ section{
 body{
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Gilroy-Bold', sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: #1b1a1a;
     color: #fff;
 }
@@ -453,17 +450,18 @@ a{
     display: block;
     position: absolute;
     right: 0px;
-    top: 10px;
+    top: 5px;
     z-index: 15;
     color: #fff;
     font-size: 150px;
+    font-weight: 900;
     opacity: 0;
     transition: all .1s linear;
     transition-delay: .3s;
     line-height: 1;
 }
 .portfolio__elem:nth-child(2n - 1):after{
-    left: 6px;
+    left: 0;
 }
 .portfolio__elem:hover::after{  
     opacity: 1;
@@ -482,11 +480,11 @@ a{
     flex-direction: column;
     gap: 15px;
     z-index: 15;
-    transition: .1s linear;
-    transition-delay: .4s;
+    transition: .15s linear;
+    transition-delay: .3s;
 }
 .portfolio__elem:hover .portfolio__elem__content {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 .portfolio__elem__title{
     font-size: 40px;
@@ -509,6 +507,10 @@ a{
     padding: 5px;
     border-radius: 50%;
     background-image: linear-gradient(to right, #ffc619 0%, #fff92b 51%, #cdff38 100%);
+}
+.portfolio__elem__git-link:hover{
+    transform: scale(1.05);
+    transition: .15s linear;
 }
 .portfolio__elem__git-link svg{
     width: 35px;
@@ -553,8 +555,10 @@ a{
 
 .contactLinks{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
     list-style: none;
+    align-items: center;
 }
 .contactLink img{
     height: 60px;
@@ -567,5 +571,4 @@ a{
     margin-top: 30px;
     font-size: 20px;
     margin-bottom: 20px;
-
 }
